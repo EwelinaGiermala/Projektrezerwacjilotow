@@ -22,17 +22,17 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars fa-beat"></i>
                 </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#zarezerwuj">Zarezerwuj</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#hotels">Hotele</a>
-                </li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" onclick=location.href="http://127.0.0.1:5502/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"onclick=location.href="http://127.0.0.1:5502/index.html#zarezerwuj">Zarezerwuj</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick=location.href="http://127.0.0.1:5502/index.html#hotels" target="_blank">Hotele</a>
+                        </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank" href="rejestracja.html">Rejestracja</a>
                 </li>
@@ -66,11 +66,8 @@
     </nav>
 <!-- END NAVBAR -->
 <!-- START MAIN -->
-
 <div class="div-container">
     <h1>Dane kontaktowe </h1>
-
-
 <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Email </label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Adres email">
@@ -88,9 +85,11 @@
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wpisz numer telefonu">
 </div>
 <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Płeć </label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wybierz płeć">
-</div>
+    <label for="exampleFormControlInput1" class="form-label" >Wybierz płeć </label><br>
+        <input type="radio" value="A" name="gender">Kobieta
+        <input type="radio" value="B" name="gender">Mężczyzna
+        
+    </select>
 <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Narodowość </label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wbierz narodowość">
@@ -99,41 +98,13 @@
     <label for="exampleFormControlInput1" class="form-label">Data urodzenia </label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wpisz datę urodzenia ">
 </div>
-<h2>Wybierz bagaż</h2>
-<div class="select-luggage">
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-        <label class="form-check-label" for="inlineRadio1"><h3>Bagaż podręczny <br> 0zł</h3></label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <label class="form-check-label" for="inlineRadio2"><h3>Zestaw bagażu podręcznego <br> 140zł</h3></label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-        <label class="form-check-label" for="inlineRadio3"><h3>Bagaż Rejestrowany<br> 280zł</h3></label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-        <label class="form-check-label" for="inlineRadio3"> <h3>Bagaż Rejestrowany x 2<br>560zł</h3></label>
-    </div>
+<a class="btn btn-secondary btn-lg" href="index.html" role="button">Zatwierdź dane </a>
 </div>
-
-<a class="btn btn-secondary btn-lg" href="zatwierdz-dane.html" role="button">Zatwierdź dane </a>
-</div>
-
-
 <!-- END MAIN -->
 <!-- START FOOTER -->
-<footer class=" mt-5 shadow">
+<footer class="shadow">
 <!-- START DIGITAL CLOCK  -->
 <div class="datetime">
-    <!-- <div class="date">
-        <div id="dayname">Dzień</div>
-        <div id="month">Miesiąc</div>
-        <div id="daynum">00</div>
-        <div id="year">Rok</div>
-    </div>  -->
     <div class="time">
         <div id="hour">00</div>
         <span>:</span>
@@ -143,7 +114,6 @@
     </div>
 </div>
 <!-- END DIGITAL CLOCK  -->
-
 <div class="container text-light text-center">
         <p class="display-5 fs-2"> Rezerwacja biletu lotniczego</p>
         <small class="text-white-50">&copy; Copyright by Ewelina Giermala.</small>

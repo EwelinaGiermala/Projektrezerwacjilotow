@@ -66,66 +66,43 @@
     </nav>
 <!-- END NAVBAR -->
 <!-- START MAIN -->
-
 <div class="div-container">
     <h1>Dane kontaktowe </h1>
-
-
     <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email </label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Adres email">
+        <label for="exampleFormControlInput1" class="form-label" data-error-text="Wpisz poprawny email">Email </label>
+        <input type="email"  name="email" class="form-control" id="email" placeholder="Adres email">
     </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Imię  </label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wpisz Imię">
+        <input type="name" name="name" class="form-control" id="name" placeholder="Wpisz Imię">
     </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nazwisko</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wpisz Nazwisko">
+        <input type="email" class="form-control" id="lastname" placeholder="Wpisz Nazwisko">
     </div>
     <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Telefon </label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wpisz numer telefonu">
+        <label for="exampleFormControlInput1" class="form-label" data-error-text="Wpisz poprawny numer telefonu">Telefon </label>
+        <input type="email" class="form-control" id="numberPhone" placeholder="Wpisz numer telefonu">
     </div>
     <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Płeć </label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wybierz płeć">
+        <label for="exampleFormControlInput1" class="form-label" >Wybierz płeć </label><br>
+            <input type="radio" value="A" name="gender">Kobieta
+            <input type="radio" value="B" name="gender">Mężczyzna
+        </select>
     </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Narodowość </label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wbierz narodowość">
+        <input type="email" class="form-control"  id="nationality" placeholder="Wpisz narodowość">
     </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Data urodzenia </label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wpisz datę urodzenia ">
+        <input type="email" class="form-control" id="dateOfbirth" placeholder="Wpisz datę urodzenia ">
     </div>
-    <h2>Wybierz bagaż</h2>
-    <div class="select-luggage">
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1"><h3>Bagaż podręczny <br> 0zł</h3></label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2"><h3>Zestaw bagażu podręcznego <br> 140zł</h3></label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3"><h3>Bagaż Rejestrowany<br> 280zł</h3></label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-            <label class="form-check-label" for="inlineRadio3"> <h3>Bagaż Rejestrowany x 2<br>560zł</h3></label>
-        </div>
-    </div>
-    
-    <a class="btn btn-secondary btn-lg" href="zatwierdz-dane.html" role="button">Zatwierdź dane </a> 
+    <a class="btn btn-secondary btn-lg" href="zatwierdz-dane.html" role="button" onclick="wyslij(this.form)">Zatwierdź dane </a> 
 </div>
-
-
 <!-- END MAIN -->
 <!-- START FOOTER -->
-<footer class=" mt-5 shadow">
+<footer class="shadow">
 <!-- START DIGITAL CLOCK  -->
 <div class="datetime">
     <!-- <div class="date">
@@ -143,7 +120,6 @@
     </div>
 </div>
 <!-- END DIGITAL CLOCK  -->
-
 <div class="container text-light text-center">
         <p class="display-5 fs-2"> Rezerwacja biletu lotniczego</p>
         <small class="text-white-50">&copy; Copyright by Ewelina Giermala.</small>
@@ -152,7 +128,7 @@
 <!-- END FOOTER -->
 <!-- START SCRIPT -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-<script src="index.js"></script>
+<script src="formularz.js"></script>
 <!-- END SCRIPT -->
 </body>
 </html>

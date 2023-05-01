@@ -65,69 +65,13 @@
         </div>
     </nav>
 <!-- END NAVBAR -->
-<!-- START MOBILE  -->
-<div class="booking-ticets-mobile">
-    <h1 id="zarezerwuj">Rezerwuj online</h1>
-    <h2 id="home"><i class="fa-solid fa-ticket fa-beat"></i> bilety lotnicze</h2>
-    <div class="booking-ticets-mobile2">
-        <div class="form-check form-check">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">W jedną stronę</label>
-        </div>
-        <div class="form-check form-check">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">W obie strony </label>
-        </div>
-        <div class="input-group mb-3" >
-            <label class="input-group-text" for="inputGroupSelect01"> <i class="fa-solid fa-location-dot"></i> Miejsce wylotu</label>
-            <select class="form-select" id="inputGroupSelect01" name="departure">
-                <option selected></option>
-                <option value="Katowice">Katowice</option>
-                <option value="Wrocław">Wrocław</option>
-                <option value="Warszawa">Warszawa</option>
-            </select>
-        </div>
-        <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect01"><i class="fa-solid fa-location-dot"></i> Miejsce przylotu</label>
-            <select class="form-select" id="inputGroupSelect02" name="arrival">
-                <option selected></option>
-                <option value="NowyJork">Nowy Jork</option>
-                <option value="Paryż">Paryż</option>
-                <option value="Rzym">Rzym</option>
-            </select>
-        </div>
-            <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect01"><i class="fa-regular fa-calendar-days"></i> Data wylotu
-                
-                    <input type="date" name="departure" id="departure" class="from-control">
-                </label>
-            </div>
-            <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect02"><i class="fa-regular fa-calendar-days"></i> Data przylotu 
-                
-                    <input type="date" name="return" id="return" class="from-control">
-                </label>
-            </div>
-            <select class="form-select form-select mb-3" aria-label=".form-select-lg example">
-                <option selected>Liczba pasażerów</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        <a class="btn btn-secondary btn-lg" id="btn-search"href="rezerwuj-loty.html" target="_blank" role="button">Szukaj <i class="fa-solid fa-magnifying-glass fa-beat"></i> </a>
-        </div>
-    </div>
-<!-- END MOBILE  -->
 <!-- START HEADER -->
     <div class="booking-ticets2">
     <h1 id="zarezerwuj">Rezerwuj online</h1>
     <h2 id="home"><i class="fa-solid fa-ticket fa-beat"></i> bilety lotnicze</h2>
     <div class="booking-ticets">
-   
-        <div class="input-group mb-3" >
-            <label class="input-group-text" for="inputGroupSelect01"> <i class="fa-solid fa-location-dot"></i> Miejsce wylotu</label>
+        <div class="input-group row" >
+            <label class="col-form-label" for="inputGroupSelect01"> <i class="fa-solid fa-location-dot"></i> Miejsce wylotu</label>
             <select class="form-select" id="inputGroupSelect01" name="departure">
                 <option selected></option>
                 <option value="departurePlace">Miejsce wylotu</option>
@@ -136,37 +80,50 @@
                 <option value="Warszawa">Warszawa</option>
             </select>
         </div>
-        <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect02"><i class="fa-solid fa-location-dot"></i> Miejsce przylotu</label>
+        <div class="input-group row">
+            <label class="col-form-label" for="inputGroupSelect02"><i class="fa-solid fa-location-dot"></i> Miejsce przylotu</label>
             <select class="form-select" id="inputGroupSelect02" name="arrival">
+                <option selected></option>
                 <option value="arrivalPlace">Miejsce przylotu</option>
                 <option value="NowyJork">Nowy Jork</option>
                 <option value="Paryż">Paryż</option>
                 <option value="Rzym">Rzym</option>
             </select>
         </div>
-            <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect01"><i class="fa-regular fa-calendar-days"></i> Data wylotu
-                
-                    <input type="date" name="date-departure" id="departure" class="from-control">
-                </label>
-            </div>
-            <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect02"><i class="fa-regular fa-calendar-days"></i> Data przylotu 
-                
-                    <input type="date" name="date-return" id="return" class="from-control">
-                </label>
-            </div>
-            <select class="form-select form-select mb-3" aria-label=".form-select-lg example">
-                <option selected>Liczba pasażerów</option>
+        <div class="input-group row" >
+            <label class=" col-form-label" for="inputGroupSelect02"><i class="fa-solid fa-user-group"></i> Liczba pasażerów</label>
+            <select class="form-select" id ="passengers"  name="passengers">
+                <option selected></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
-        <a class="btn btn-secondary btn-lg" id="btn-search"href="rezerwuj-loty.html" target="_blank" role="button">Szukaj <i class="fa-solid fa-magnifying-glass fa-beat"></i> </a>
         </div>
+        <div class="input-group row" >
+            <label class=" col-form-label" for="inputGroupSelect02"><i class="fa-solid fa-suitcase"></i> Bagaż</label>
+            <select class="form-select" id ="luggage"  name="luggage">
+                <option selected></option>
+                <option value="1">Bagaż podręczny</option>
+                <option value="2">Zestaw Bagażu podręcznego</option>
+                <option value="3">Bagaż rejestrowany</option>
+                <option value="4">Bagaż rejestrowany x 2</option>
+            </select>
+        </div>
+            <div class="input-group row">
+                <label class="col-form-label" for="inputGroupSelect01"><i class="fa-regular fa-calendar-days"></i> Data wylotu
+                    <input type="date" name="date-departure" id="departure" class="from-control">
+                </label>  
+            </div>
+            <div class="input-group row">
+                <label class=" col-form-label" for="inputGroupSelect02"><i class="fa-regular fa-calendar-days"></i> Data przylotu 
+                    <input type="date" name="date-arrival" id="return" class="from-control">
+                </label>
+            </div>
+        <a class="btn btn-secondary btn-lg"  id="btn-search" role="button">Szukaj <i class="fa-solid fa-magnifying-glass fa-beat"></i> </a></div>
+        </div>
+    </div>
     </div>
     </header>
 <!-- END HEADER -->
@@ -205,12 +162,6 @@
 <footer class=" mt-5 shadow">
 <!-- START DIGITAL CLOCK  -->
 <div class="datetime">
-    <!-- <div class="date">
-        <div id="dayname">Dzień</div>
-        <div id="month">Miesiąc</div>
-        <div id="daynum">00</div>
-        <div id="year">Rok</div>
-    </div>  -->
     <div class="time">
         <div id="hour">00</div>
         <span>:</span>
@@ -220,7 +171,6 @@
     </div>
 </div>
 <!-- END DIGITAL CLOCK  -->
-
 <div class="container text-light text-center">
         <p class="display-5 fs-2"> Rezerwacja biletu lotniczego</p>
         <small class="text-white-50">&copy; Copyright by Ewelina Giermala.</small>
@@ -228,7 +178,8 @@
 </footer>
 <!-- END FOOTER -->
 <!-- START SCRIPT -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 <!-- END SCRIPT -->
 </body>
